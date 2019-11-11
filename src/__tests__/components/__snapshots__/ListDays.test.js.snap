@@ -1,0 +1,78 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListDays component suite should list the emojis when we have some days 1`] = `
+<div
+  className="list_days__container"
+>
+  <h1
+    className="list_days__title"
+  >
+    Life - Calendar
+  </h1>
+  <ul
+    className="list_days__list"
+  >
+    <li
+      className="list_days__mood_item"
+    >
+      <div>
+        <p
+          data-for="2019-11-09"
+          data-tip={true}
+        >
+          😊
+        </p>
+        <div
+          className="__react_component_tooltip place-top type-dark "
+          data-id="tooltip"
+          id="2019-11-09"
+        >
+          <h1>
+            2019-11-09
+          </h1>
+          <p>
+            yeeeeah
+          </p>
+        </div>
+      </div>
+    </li>
+    <li
+      className="list_days__mood_item"
+    >
+      <div>
+        <p
+          data-for="2019-11-08"
+          data-tip={true}
+        >
+          😪
+        </p>
+        <div
+          className="__react_component_tooltip place-top type-dark "
+          data-id="tooltip"
+          id="2019-11-08"
+        >
+          <h1>
+            2019-11-08
+          </h1>
+          <p />
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`ListDays component suite should show empty case when no days are found 1`] = `
+<div
+  className="list_days__container"
+>
+  <h1
+    className="list_days__title"
+  >
+    Life - Calendar
+  </h1>
+  <p>
+    qué tal ha ido tu día
+  </p>
+</div>
+`;
