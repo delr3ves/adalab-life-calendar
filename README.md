@@ -2,6 +2,7 @@
 
 Welcome to life-calendar the third project from Adalab`s online training :) You can find the whole specification in [https://books.adalab.es/materiales-front-end-e/formacion-continua/3_prueba_tecnica](https://books.adalab.es/materiales-front-end-e/formacion-continua/3_prueba_tecnica).
 
+![Screenshot del proyecto](./arts/life-calendar.gif)
 
 ## Development
 
@@ -31,6 +32,20 @@ In case you find some erros, you can give a try to fixLint to fix some common pr
 
 ```
   npm run fixLint
+```
+
+### Run the tests
+
+We test both the model and the views with jest, to run the whole test suite you just need to run:
+```
+  npm test
+```
+
+#### Snapshot testiting
+As we're using snapshot testing technique to perform our assertions over the react components, we could need to regenerate the snapshots once a component has changed. To do so just run:
+
+```
+  npm run recordSnapshots
 ```
 
 ### CI
