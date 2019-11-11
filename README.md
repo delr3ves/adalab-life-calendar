@@ -1,6 +1,6 @@
 #Life Calendar
 
-Welcome to life-calendar the third project from Adalab`s online training :) You can find the whole specification in (https://books.adalab.es/materiales-front-end-e/formacion-continua/3_prueba_tecnica)[https://books.adalab.es/materiales-front-end-e/formacion-continua/3_prueba_tecnica].
+Welcome to life-calendar the third project from Adalab`s online training :) You can find the whole specification in [https://books.adalab.es/materiales-front-end-e/formacion-continua/3_prueba_tecnica](https://books.adalab.es/materiales-front-end-e/formacion-continua/3_prueba_tecnica).
 
 
 ## Develpment
