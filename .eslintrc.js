@@ -1,10 +1,17 @@
 module.exports = {
   env: {
+    node: true,
     browser: true,
-    es6: true
+    es6: true,
+    jest: true
   },
   extends: [
-    'standard'
+    "eslint:recommended",
+    "prettier",
+    "prettier/react",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings"
   ],
   globals: {
     Atomics: 'readonly',
@@ -14,7 +21,7 @@ module.exports = {
     ecmaFeatures: {
       jsx: true
     },
-    ecmaVersion: 2018,
+    "ecmaVersion": 6,
     sourceType: 'module'
   },
   plugins: [
