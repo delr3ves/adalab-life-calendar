@@ -159,7 +159,7 @@ class MoodTracker extends React.Component {
 }
 
 MoodTracker.propTypes = {
-  lifeCalendarService: PropTypes.func,
+  lifeCalendarService: PropTypes.object,
   notifyCreation: PropTypes.func
 };
 
