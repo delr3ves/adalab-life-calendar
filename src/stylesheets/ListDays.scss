@@ -1,17 +1,21 @@
-
-
 .list_days__title {
   font-size: 1.3em;
 }
 
 .list_days__list {
   list-style: none;
+  text-align: justify;
 }
 
 .list_days__mood_item {
   display: inline-block;
-  margin: 5px;
-  font-size: 3em;
+  margin: 15px;
+  font-size: 5em;
   cursor: pointer;
+  transition: opacity .3s ease-in-out;
+  opacity: .8;
 }
 
+.list_days__mood_item:hover {
+  opacity: 1;
+}

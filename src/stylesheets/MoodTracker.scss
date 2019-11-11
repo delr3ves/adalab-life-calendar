@@ -41,10 +41,36 @@
     width: 220px;
     height: 30px;
     margin: 15px 0 15px;
+    transition: background-color .3s ease-in-out;
   }
+  .save__button:hover {
+    background-color: #2e8ac0;
+  }
+
   .cancel__button {
     width: 220px;
     height: 30px;
     margin-bottom: 15px;
   }
   
+  .mood_tracket__error_field {
+    color: red;
+    font-size: .8em;
+    margin-bottom: 0px;
+  }
+
+  .mood_tracker__face {
+    font-size: 5em;
+    cursor: pointer;
+  }
+
+  .mood_tracker__disabled_face {
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: all .3s ease-in-out;
+  }
+
+  .mood_tracker__disabled_face:hover {
+    -webkit-filter: grayscale(40%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(40%);
+  }

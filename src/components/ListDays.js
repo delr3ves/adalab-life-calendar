@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import { HAPPY, SAD } from "../core/MoodConstants";
+import { HAPPY } from "../core/MoodConstants";
 import "../stylesheets/ListDays.scss";
 import ReactTooltip from "react-tooltip";
+import moodToEmoji from "./utils/MoodToEmoji";
 
 const dayShape = PropTypes.shape({
   date: PropTypes.date,
@@ -11,15 +12,6 @@ const dayShape = PropTypes.shape({
 });
 
 const SingleDay = props => {
-  function moodToEmoji(mood) {
-    if (mood === HAPPY) {
-      return "😊";
-    } else if (mood === SAD) {
-      return "😪";
-    } else {
-      return "🙃";
-    }
-  }
   const { day } = props;
   const moodType = day.mood === HAPPY ? "success" : "warning";
   return (
