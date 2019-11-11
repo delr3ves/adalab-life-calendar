@@ -1,0 +1,21 @@
+.list_days__container {
+  width: 450px;
+  height: 100vh;
+  margin: 0 auto;
+}
+
+.list_days__title {
+  font-size: 1.3em;
+}
+
+.list_days__list {
+  list-style: none;
+}
+
+.list_days__mood_item {
+  display: inline-block;
+  margin: 5px;
+  font-size: 3em;
+  cursor: pointer;
+}
+

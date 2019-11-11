@@ -1,24 +1,115 @@
 import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
+import ListDays from "./components/ListDays";
+import { HAPPY, SAD } from "./core/MoodConstants";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <ListDays
+        days={[
+          {
+            date: "2019/11/09",
+            mood: HAPPY,
+            comment: "This is sparta!!!!"
+          },
+          {
+            date: "2019/11/10",
+            mood: SAD,
+            comment: ""
+          },
+          {
+            date: "2019/11/11",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/12",
+            mood: HAPPY,
+            comment: ""
+          },
+          {
+            date: "2019/11/13",
+            mood: HAPPY,
+            comment: ""
+          }
+        ]}
+      />
     </div>
   );
 }
