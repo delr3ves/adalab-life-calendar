@@ -41,18 +41,26 @@ SingleDay.propTypes = {
 };
 
 class ListDays extends Component {
+  listOfDays(days) {
+    return (
+      <ul className="list_days__list">
+        {days.map(day => (
+          <li key={day.date} className="list_days__mood_item">
+            <SingleDay day={day} />
+          </li>
+        ))}
+      </ul>
+    );
+  }
+
   render() {
     const { days } = this.props;
+    const list =
+      days.length > 0 ? this.listOfDays(days) : <p>qué tal ha ido tu día</p>;
     return (
       <div className="list_days__container">
         <h1 className="list_days__title">Life - Calendar</h1>
-        <ul className="list_days__list">
-          {days.map(day => (
-            <li key={day.date} className="list_days__mood_item">
-              <SingleDay day={day} />
-            </li>
-          ))}
-        </ul>
+        {list}
       </div>
     );
   }
