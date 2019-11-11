@@ -1,9 +1,8 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
 import { HAPPY, SAD } from "../core/MoodConstants";
+import "../stylesheets/ListDays.scss";
 import ReactTooltip from "react-tooltip";
-
-import "./ListDays.scss";
 
 const dayShape = PropTypes.shape({
   date: PropTypes.date,

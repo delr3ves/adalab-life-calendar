@@ -1,0 +1,50 @@
+.form__container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 50px;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    border: 1px solid grey;
+    width: 400px;
+    height: 300px;
+  }
+  .back__button {
+    height: 40px;
+    width: 100px;
+  }
+  .title__date {
+    padding: 15px;
+  }
+  .form__date {
+    width: 220px;
+  }
+  .mood__emotic-form {
+    margin: 15px 0 30px;
+  }
+  .happy__container {
+    margin: 15px 0 20px;
+  }
+  .hidden {
+    display: none;
+  }
+  .mood__emotic-form {
+    border: none;
+  }
+  .save__button {
+    background-color: #3f9bd1;
+    color: white;
+    width: 220px;
+    height: 30px;
+    margin: 15px 0 15px;
+  }
+  .cancel__button {
+    width: 220px;
+    height: 30px;
+    margin-bottom: 15px;
+  }
+  
