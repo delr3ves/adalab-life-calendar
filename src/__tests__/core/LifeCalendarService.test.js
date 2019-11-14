@@ -34,4 +34,9 @@ describe("LifeCalendarService findAll suite", () => {
     expect(foundDays).toStrictEqual(expectedSortedDays);
     localStorage.removeItem("life-calendar-days");
   });
+
+  it("should return a 404 error when data doesn't exist", () => {
+    givenSomeDaysAreStored(localStorage);
+    return localStorage === undefined;
+  });
 });
